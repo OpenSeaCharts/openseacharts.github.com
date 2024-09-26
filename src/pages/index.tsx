@@ -4,6 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import * as React from 'react';
+import Map from 'react-map-gl/maplibre';
 
 import styles from './index.module.css';
 
@@ -34,10 +36,15 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <Map
+        initialViewState={{
+          longitude: -122.4,
+          latitude: 37.8,
+          zoom: 14
+        }}
+        style={{width: "100%", height: "100%"}}
+        mapStyle="https://tiles.versatiles.org/assets/styles/colorful.json"
+      />
     </Layout>
   );
 }
