@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'OpenSeaCharts',
   tagline: 'Vector sea mark map tiles',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-48x48.png',
 
   // Set the production url of your site here
   url: 'https://openseacharts.github.io',
@@ -61,11 +61,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'LibreSeaCharts',
+      title: 'OpenSeaCharts',
       logo: {
-        alt: 'LibreSeaCharts',
+        alt: 'OpenSeaCharts',
         src: 'img/logo.svg',
       },
       items: [
@@ -73,9 +73,8 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -83,7 +82,7 @@ const config: Config = {
         },
       ],
     },
-    footer: {
+    /*footer: {
       style: 'dark',
       links: [
         {
@@ -96,38 +95,17 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Links',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
-              href: 'https://github.com/openseacharts/openseacharts.github.com',
+              href: 'https://github.com/OpenSeaCharts/openseacharts.github.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} LibreSeaCharts`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()} OpenSeaCharts`,
+    },*/
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

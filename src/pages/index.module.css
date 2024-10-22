@@ -3,21 +3,17 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+html, body, #app, #app>div {
+  height: 100%
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  flex: 1;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.content {
+  flex: 1;
+  background-color: red;
 }
