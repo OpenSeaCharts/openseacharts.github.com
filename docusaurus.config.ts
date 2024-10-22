@@ -76,7 +76,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/OpenSeaCharts',
           label: 'GitHub',
           position: 'right',
         },
