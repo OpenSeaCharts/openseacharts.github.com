@@ -21,6 +21,8 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+      - name: Get Dependencies
+        run: npm install
       - name: Build
         run: hugo --minify
       - name: Deploy
