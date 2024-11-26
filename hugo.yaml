@@ -1,0 +1,34 @@
+baseURL: "https://openseacharts.github.io/"
+languageCode: en-us
+title: OpenSeaCharts
+theme: ["PaperMod"]
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home: [ HTML, RSS, JSON ]
+
+params:
+  hideFooter: true
+  socialIcons:
+    - name: github
+      title: Github
+      url: "https://github.com/openseacharts"
+  editPost:
+    URL: "https://github.com/openseacharts/openseacharts.github.io/tree/main/content"
+    Text: "Edit Site"
+    appendFilePath: true
+  label:
+    icon: img/logo.png
+    iconHeight: 35
+  assets:
+    disableHLJS: true
+    favicon: "favicon-48x48.png"

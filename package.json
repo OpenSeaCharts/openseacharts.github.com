@@ -1,0 +1,21 @@
+{
+  "comments": {
+    "dependencies": {
+      "maplibre-gl": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1"
+  },
+  "scripts": {
+    "build": "hugo --minify",
+    "serve": "hugo server",
+    "format": "prettier --write .",
+    "format-check": "prettier --check .",
+    "postinstall": "cp -r node_modules/@fontsource/alata/files static/"
+  },
+  "devDependencies": {},
+  "name": "openseacharts.github.com",
+  "version": "0.1.0"
+}
