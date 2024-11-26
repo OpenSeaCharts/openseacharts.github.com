@@ -1,0 +1,3 @@
+baseURL = 'https://openseacharts.github.io/'
+languageCode = 'en-us'
+title = 'OpenSeaCharts'
