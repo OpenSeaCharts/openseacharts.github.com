@@ -2,6 +2,7 @@ name: "Build Site"
 on:
   workflow_dispatch:
   push:
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -29,9 +30,12 @@ jobs:
         run: npm ci
       - name: Build
         run: hugo --minify
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
