@@ -12,7 +12,7 @@
     "build": "hugo --minify",
     "serve": "hugo server",
     "format": "prettier --write .",
-    "format-check": "prettier --check .",
+    "format-check": "prettier --check ."
   },
   "devDependencies": {},
   "name": "openseacharts.github.com",
