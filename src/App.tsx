@@ -1,23 +1,28 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import './App.css'
-import Home from "./home/Home.tsx";
+import Home from "./pages/home/Home.tsx";
+import {HeaderMenu} from "./components/HeaderMenu.tsx";
+import {createTheme, MantineProvider} from "@mantine/core";
+import '@mantine/core/styles.css';
+
+const theme = createTheme({
+  /** mantine theme overrides */
+});
 
 function App() {
   return (
     <>
-      <header>
-        <nav>
-          <div>
-            <div>OpenSeaCharts</div>
-          </div>
-        </nav>
-      </header>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <MantineProvider theme={theme}>
+        <BrowserRouter>
+          <header>
+            <HeaderMenu/>
+          </header>
+          <Routes>
+            <Route path="/" element={<Home/>}>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </MantineProvider>
     </>
   )
 }
