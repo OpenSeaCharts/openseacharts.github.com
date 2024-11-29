@@ -13,7 +13,7 @@ jobs:
       - name: Get Dependencies
         run: npm install
       - name: Build React
-        run: npm build
+        run: npm run build
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
